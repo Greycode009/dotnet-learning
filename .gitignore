@@ -1,0 +1,33 @@
+## Build outputs
+**/bin/
+**/obj/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/code-workspace
+
+## JetBrains Rider / Rider
+.idea/
+*.sln.iml
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userdiagnostics
+*.userprototype
+
+## OS files
+.DS_Store
+Thumbs.db
