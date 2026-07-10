@@ -4,23 +4,7 @@ A collection of basic .NET Console Applications built to learn and practice C# p
 
 ---
 
-## 📂 Repository Structure
 
-Below are the details of the projects included in this workspace:
-
-### 1. [first Project](file:///c:/Users/pc/Desktop/dotnet/first)
-A simple introductory console application.
-* **Source Code**: [first/Program.cs](file:///c:/Users/pc/Desktop/dotnet/first/Program.cs)
-* **Project File**: [first/first.csproj](file:///c:/Users/pc/Desktop/dotnet/first/first.csproj)
-* **Goal**: Greets the user ("Hello! My name is Dipesh") and waits for a key press to terminate.
-
-### 2. [variable Project](file:///c:/Users/pc/Desktop/dotnet/variable)
-An application demonstrating variables and basic arithmetic.
-* **Source Code**: [variable/Program.cs](file:///c:/Users/pc/Desktop/dotnet/variable/Program.cs)
-* **Project File**: [variable/variable.csproj](file:///c:/Users/pc/Desktop/dotnet/variable/variable.csproj)
-* **Goal**: Demonstrates integer declaration, summation of two variables, and outputting the result.
-
----
 
 ## 🛠️ Getting Started
 
