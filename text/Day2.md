@@ -263,6 +263,141 @@ class Program {
 }
 ```
 
+## 9. Jump statements in C#
+
+### break
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        for (int i = 0; i < 10; i++) {
+            if (i == 5) {
+                break;
+            }
+            Console.WriteLine(i);
+        }
+    }
+}
+```
+
+- `break` stops the loop or switch immediately
+
+### continue
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        for (int i = 0; i < 5; i++) {
+            if (i == 2) {
+                continue;
+            }
+            Console.WriteLine(i);
+        }
+    }
+}
+```
+
+- `continue` skips the current iteration and moves to the next one
+
+### goto
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        int i = 0;
+
+        start:
+        Console.WriteLine(i);
+        i++;
+
+        if (i < 3) {
+            goto start;
+        }
+    }
+}
+```
+
+- `goto` transfers control to a labeled statement
+- It is rarely used in modern C# programming
+
+## 10. Conditional statements in C#
+
+### if statement
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        int age = 18;
+
+        if (age >= 18) {
+            Console.WriteLine("Adult");
+        }
+    }
+}
+```
+
+### if-else statement
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        int marks = 70;
+
+        if (marks >= 50) {
+            Console.WriteLine("Pass");
+        }
+        else {
+            Console.WriteLine("Fail");
+        }
+    }
+}
+```
+
+### else if statement
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        int marks = 85;
+
+        if (marks >= 90) {
+            Console.WriteLine("A");
+        }
+        else if (marks >= 70) {
+            Console.WriteLine("B");
+        }
+        else {
+            Console.WriteLine("C");
+        }
+    }
+}
+```
+
+### switch expression (modern C#)
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        int day = 2;
+        string result = day switch
+        {
+            1 => "Monday",
+            2 => "Tuesday",
+            _ => "Other"
+        };
+
+        Console.WriteLine(result);
+    }
+}
+```
+
 ## Quick summary
 
 - C is a low-level and procedural language
@@ -271,3 +406,5 @@ class Program {
 - C# uses `Console.WriteLine()` and `Console.ReadLine()`
 - `for`, `while`, and `do while` exist in both languages
 - `foreach` is available in C# but not in C
+- C# supports `break`, `continue`, and `return` for jump statements
+- C# uses `if`, `else`, `else if`, and `switch` for conditional logic
