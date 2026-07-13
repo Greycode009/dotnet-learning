@@ -153,9 +153,121 @@ class Program {
 - C uses `main()` as the starting point
 - C# uses `Main()` inside a class
 
+## 8. Different types of loops
+
+### for loop
+```c
+#include <stdio.h>
+
+int main() {
+    for (int i = 0; i < 5; i++) {
+        printf("%d\n", i);
+    }
+    return 0;
+}
+```
+
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        for (int i = 0; i < 5; i++) {
+            Console.WriteLine(i);
+        }
+    }
+}
+```
+
+### foreach loop
+```c
+// C does not have a built-in foreach loop like C#
+```
+
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        int[] numbers = { 1, 2, 3, 4 };
+
+        foreach (int n in numbers) {
+            Console.WriteLine(n);
+        }
+    }
+}
+```
+
+- `foreach` is used in C# to iterate through arrays, lists, and collections
+- C does not have a built-in `foreach` keyword
+
+### while loop
+```c
+#include <stdio.h>
+
+int main() {
+    int i = 0;
+
+    while (i < 5) {
+        printf("%d\n", i);
+        i++;
+    }
+
+    return 0;
+}
+```
+
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        int i = 0;
+
+        while (i < 5) {
+            Console.WriteLine(i);
+            i++;
+        }
+    }
+}
+```
+
+### do while loop
+```c
+#include <stdio.h>
+
+int main() {
+    int i = 0;
+
+    do {
+        printf("%d\n", i);
+        i++;
+    } while (i < 5);
+
+    return 0;
+}
+```
+
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        int i = 0;
+
+        do {
+            Console.WriteLine(i);
+            i++;
+        } while (i < 5);
+    }
+}
+```
+
 ## Quick summary
 
 - C is a low-level and procedural language
 - C# is a modern, high-level language designed for .NET
 - C uses `printf()` and `scanf()`
 - C# uses `Console.WriteLine()` and `Console.ReadLine()`
+- `for`, `while`, and `do while` exist in both languages
+- `foreach` is available in C# but not in C
