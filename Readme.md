@@ -14,6 +14,12 @@ Make sure you have the **.NET SDK** installed. You can verify your installation 
 dotnet --version
 ```
 
+### Create a New Project
+To create a new .NET Console Application:
+```bash
+dotnet new console -n projectName
+```
+
 ### Running the Projects
 You can run any project directly from the root directory using the `--project` flag:
 
