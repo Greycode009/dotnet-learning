@@ -13,7 +13,7 @@ class Program
         Console.WriteLine("Array elements:");
         for (int i = 0; i < numbers.Length; i++)
         {
-            Console.WriteLine(numbers[i]);
+            Console.WriteLine(i + " : " + numbers[i]);
         }
     }
 }
